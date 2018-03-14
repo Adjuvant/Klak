@@ -214,7 +214,15 @@ namespace Klak.Wiring.Patcher
             edgeGUI.DoDraggedEdge();
 
             // Mouse drag
+<<<<<<< HEAD
             // DragSelection(new Rect(-5000, -5000, 10000, 10000));
+=======
+        #if UNITY_2017_3_OR_NEWER
+            DragSelection();
+        #else
+            DragSelection(new Rect(-5000, -5000, 10000, 10000));
+        #endif
+>>>>>>> upstream/master
 
             // Context menu
             ShowCustomContextMenu();
