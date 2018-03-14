@@ -214,15 +214,11 @@ namespace Klak.Wiring.Patcher
             edgeGUI.DoDraggedEdge();
 
             // Mouse drag
-<<<<<<< HEAD
-            // DragSelection(new Rect(-5000, -5000, 10000, 10000));
-=======
-        #if UNITY_2017_3_OR_NEWER
-            DragSelection();
-        #else
-            DragSelection(new Rect(-5000, -5000, 10000, 10000));
-        #endif
->>>>>>> upstream/master
+            #if UNITY_2017_3_OR_NEWER
+                DragSelection();
+            #else
+                DragSelection(new Rect(-5000, -5000, 10000, 10000));
+            #endif
 
             // Context menu
             ShowCustomContextMenu();
@@ -257,6 +253,12 @@ namespace Klak.Wiring.Patcher
                 menu.AddItem(new GUIContent("Duplicate"), false, ContextMenuCallback, "Duplicate");
                 menu.AddSeparator("");
                 menu.AddItem(new GUIContent("Delete"), false, ContextMenuCallback, "Delete");
+                menu.AddSeparator("");
+                var colors = Enum.GetValues(typeof(Graphs.Styles.Color)).Cast<Graphs.Styles.Color>().Distinct();
+                foreach (var color in colors)
+                {
+                    menu.AddItem(new GUIContent("Color/" + color), false, ContextMenuColorCallback, color);
+                }
 			}
 			else if (edgeGUI.edgeSelection.Count != 0)
             {
@@ -279,6 +281,16 @@ namespace Klak.Wiring.Patcher
         void ContextMenuCallback(object data)
         {
             m_Host.SendEvent(EditorGUIUtility.CommandEvent((string)data));
+        }
+
+        void ContextMenuColorCallback(object data)
+        {
+            var newColor = (Graphs.Styles.Color)data;
+
+            foreach (Node node in selection)
+            {
+                node.SetColor(newColor);
+            }
         }
 
         void CreateMenuItemCallback(object data)
