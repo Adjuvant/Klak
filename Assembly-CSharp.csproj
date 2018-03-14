@@ -57,6 +57,7 @@
      <Compile Include="Assets\Klak\Math\Interpolator.cs" />
      <Compile Include="Assets\Klak\Math\NoiseGenerator.cs" />
      <Compile Include="Assets\Klak\Math\Perlin.cs" />
+     <Compile Include="Assets\Klak\Math\SphericalCoordinates.cs" />
      <Compile Include="Assets\Klak\Math\Tween.cs" />
      <Compile Include="Assets\Klak\Math\XXHash.cs" />
      <Compile Include="Assets\Klak\Motion\BrownianMotion.cs" />
