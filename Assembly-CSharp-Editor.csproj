@@ -52,6 +52,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\PackageTool.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Editor\EssenceEditor.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Helpers\EditorPrefValues.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\JiffyEditor.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\MenuItems.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Templates\Essence.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Templates\JiffyGeneratorConstructor.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Templates\JiffyGeneratorPreprocessor.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Templates\TemplateUtility.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Type Search Window\AssemblyToggle.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Type Search Window\EditorGUIEx.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Type Search Window\Styles.cs" />
+     <Compile Include="Assets\Jiffy\Editor\lib\Type Search Window\TypeSearchWindow.cs" />
      <Compile Include="Assets\Klak\Editor\ImageSequenceWindow.cs" />
      <Compile Include="Assets\Klak\Math\Editor\InterpolatorConfigDrawer.cs" />
      <Compile Include="Assets\Klak\Motion\Editor\BrownianMotionEditor.cs" />

@@ -35,6 +35,8 @@ Features
 
 - Klak.Wiring: node-based patching system
 
+- Klak.Math.Waves: Series of wave functions that can be called at control or audio rate (WiP)
+
 Installation
 ------------
 
