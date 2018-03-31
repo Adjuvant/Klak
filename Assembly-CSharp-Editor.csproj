@@ -63,6 +63,7 @@
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\FloatAnimationEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\FromToVectorEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\HSBColorEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Basic\SphericalEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\VectorEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\BangFilterEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\DelayEditor.cs" />
@@ -74,6 +75,7 @@
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\ThresholdEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\ToggleEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\ToggleFourEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Filter\VectorClampEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\VectorMixerEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Input\AxisInputEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Input\ButtonInputEditor.cs" />

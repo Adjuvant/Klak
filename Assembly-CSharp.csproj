@@ -69,6 +69,7 @@
      <Compile Include="Assets\Klak\Wiring\Basic\FloatAnimation.cs" />
      <Compile Include="Assets\Klak\Wiring\Basic\FromToVector.cs" />
      <Compile Include="Assets\Klak\Wiring\Basic\HSBColor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\Spherical.cs" />
      <Compile Include="Assets\Klak\Wiring\Basic\Vector.cs" />
      <Compile Include="Assets\Klak\Wiring\Filter\BangFilter.cs" />
      <Compile Include="Assets\Klak\Wiring\Filter\Delay.cs" />
@@ -80,6 +81,7 @@
      <Compile Include="Assets\Klak\Wiring\Filter\Threshold.cs" />
      <Compile Include="Assets\Klak\Wiring\Filter\Toggle.cs" />
      <Compile Include="Assets\Klak\Wiring\Filter\ToggleFour.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\VectorClamp.cs" />
      <Compile Include="Assets\Klak\Wiring\Filter\VectorMix.cs" />
      <Compile Include="Assets\Klak\Wiring\Input\AxisInput.cs" />
      <Compile Include="Assets\Klak\Wiring\Input\ButtonInput.cs" />
