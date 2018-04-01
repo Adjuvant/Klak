@@ -3,6 +3,12 @@
 //
 // Copyright (C) 2016 Keijiro Takahashi
 //
+// Klak Waves - Audio and control rate wave functions for Klak
+// 
+// Copyright (C) 2018, Thomas Deacon
+//
+// Klak Waves is a port of toxiclibs, Copyright (c) 2006-2011 Karsten Schmidt
+// 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
 // in the Software without restriction, including without limitation the rights

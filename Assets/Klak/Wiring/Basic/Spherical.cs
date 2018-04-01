@@ -1,6 +1,10 @@
 //
-// Klak extension - Utilities for creative coding with Unity
+// Klak - Utilities for creative coding with Unity
 //
+// Copyright (C) 2016 Keijiro Takahashi
+//
+// Klak Spherical Coordinates - Extended maths functions
+// 
 // Copyright (C) 2018 Thomas Deacon
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
