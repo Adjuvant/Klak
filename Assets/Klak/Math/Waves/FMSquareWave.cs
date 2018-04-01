@@ -6,7 +6,7 @@ namespace Klak.Math.Waves
     
     public FMSquareWave(float phase, float freq, AbstractWave fmod) : 
             base(phase, freq) {
-        this.fmod = this.fmod;
+        this.fmod = fmod;
     }
     
     public FMSquareWave(float phase, float freq, float amp, float offset) : 
@@ -15,20 +15,20 @@ namespace Klak.Math.Waves
     
     public FMSquareWave(float phase, float freq, float amp, float offset, AbstractWave fmod) : 
             base(phase, freq, amp, offset) {
-        this.fmod = this.fmod;
+        this.fmod = fmod;
     }
     
-    public void Pop() {
+    public new void Pop() {
         base.Pop();
         this.fmod.Pop();
     }
     
-    public void Push() {
+    public new void Push() {
         base.Push();
         this.fmod.Push();
     }
     
-    public void Reset() {
+    public new void Reset() {
         base.Reset();
         this.fmod.Reset();
     }

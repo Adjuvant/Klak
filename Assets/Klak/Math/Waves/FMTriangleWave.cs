@@ -17,15 +17,15 @@ namespace Klak.Math.Waves
     
     public FMTriangleWave(float phase, float freq, float amp, float offset, AbstractWave fmod) : 
             base(phase, freq, amp, offset) {
-        this.fmod = this.fmod;
+        this.fmod = fmod;
     }
     
-    public void Pop() {
+    public new void Pop() {
         base.Pop();
         this.fmod.Pop();
     }
     
-    public void Push() {
+    public new void Push() {
         base.Push();
         this.fmod.Push();
     }

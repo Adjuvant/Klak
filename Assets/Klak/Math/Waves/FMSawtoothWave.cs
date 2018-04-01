@@ -38,17 +38,17 @@ namespace Klak.Math.Waves
         this.fmod = fmod;
     }
     
-    public void Pop() {
+    public new void Pop() {
         base.Pop();
         this.fmod.Pop();
     }
     
-    public void Push() {
+    public new void Push() {
         base.Push();
         this.fmod.Push();
     }
     
-    public void Reset() {
+    public new void Reset() {
         base.Reset();
         this.fmod.Reset();
     }
