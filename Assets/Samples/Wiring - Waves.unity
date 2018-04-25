@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0cb6ca582c5e24165bb6edaa509564ec, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.025940903, g: 0.025810098, b: 0.025048584, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edad23a17cf274568b94175889efd8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -24, y: 48}
+  _wiringNodePosition: {x: -84, y: 48}
   _wiringNodeColor: 0
   _scale: 1
   _vectorEvent:
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4fa215cb6f538043b9a260fea65bebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -444, y: -12}
+  _wiringNodePosition: {x: -408, y: 0}
   _wiringNodeColor: 0
   _minimum: 1
   _maximum: 3
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc92c4481fa814491b9bbc5a6b8de3a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -444, y: 108}
+  _wiringNodePosition: {x: -408, y: 108}
   _wiringNodeColor: 0
   _wave:
     _waveType: 7
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28fb8e5f0356b5459f21ad2b6952a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -24, y: -36}
+  _wiringNodePosition: {x: -84, y: -48}
   _wiringNodeColor: 0
   _baseVector: {x: 3, y: 3, z: 3}
   _vectorEvent:
@@ -1661,7 +1661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc92c4481fa814491b9bbc5a6b8de3a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -444, y: 60}
+  _wiringNodePosition: {x: -408, y: 60}
   _wiringNodeColor: 0
   _wave:
     _waveType: 9
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4aca5806d89554ea1754d3f877fd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: 188, y: 7}
+  _wiringNodePosition: {x: 120, y: 0}
   _wiringNodeColor: 0
   _targetTransform: {fileID: 1987783494}
   _addToOriginal: 0
@@ -2345,7 +2345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc92c4481fa814491b9bbc5a6b8de3a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -252, y: -36}
+  _wiringNodePosition: {x: -252, y: -48}
   _wiringNodeColor: 0
   _wave:
     _waveType: 3
