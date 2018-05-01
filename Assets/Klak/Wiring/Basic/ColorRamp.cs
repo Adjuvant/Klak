@@ -1,4 +1,4 @@
-//
+﻿//
 // Klak - Utilities for creative coding with Unity
 //
 // Copyright (C) 2016 Keijiro Takahashi
@@ -25,7 +25,7 @@ using UnityEngine;
 
 namespace Klak.Wiring
 {
-    [AddComponentMenu("Klak/Wiring/Convertion/Color Ramp")]
+    [AddComponentMenu("Klak/Wiring/Conversion/Color Ramp")]
     public class ColorRamp : NodeBase
     {
         #region Editable properties

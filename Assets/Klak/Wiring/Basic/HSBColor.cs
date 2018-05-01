@@ -1,11 +1,11 @@
-// Klak - Creative coding library for Unity
+﻿// Klak - Creative coding library for Unity
 // https://github.com/keijiro/Klak
 
 using UnityEngine;
 
 namespace Klak.Wiring
 {
-    [AddComponentMenu("Klak/Wiring/Convertion/HSB Color")]
+    [AddComponentMenu("Klak/Wiring/Conversion/HSB Color")]
     public class HSBColor : NodeBase
     {
         #region Editable properties

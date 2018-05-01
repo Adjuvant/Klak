@@ -1,4 +1,4 @@
-//
+﻿//
 // Klak - Utilities for creative coding with Unity
 //
 // Copyright (C) 2016 Keijiro Takahashi
@@ -30,7 +30,7 @@ using Klak.Math;
 
 namespace Klak.Wiring
 {
-    [AddComponentMenu("Klak/Wiring/Convertion/Spherical")]
+    [AddComponentMenu("Klak/Wiring/Conversion/Spherical")]
     public class Spherical : NodeBase
     {
         #region Editable properties        
