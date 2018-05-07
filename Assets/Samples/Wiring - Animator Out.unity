@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac29b237ec50443eb83709408b23085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: 168, y: 12}
+  _wiringNodePosition: {x: 168, y: 0}
   _wiringNodeColor: 0
   _target: {fileID: 461515362}
   _propertyName: text
