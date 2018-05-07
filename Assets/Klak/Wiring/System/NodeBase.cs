@@ -46,6 +46,9 @@ namespace Klak.Wiring
     }
 
     // Base class of wiring node classes
+    // If adding new custom event types, ensure ConnectionTools.cs is changed 
+    // accordingly in ConnectSlots(args), GetEventDataType(args), 
+    // GetUnityActionToInvokeMethod(args)
     public class NodeBase : MonoBehaviour
     {
         [SerializeField, HideInInspector]
@@ -74,6 +77,9 @@ namespace Klak.Wiring
 
         [Serializable]
         public class BoolEvent : UnityEvent<bool> { }
+
+        [Serializable]
+        public class StringEvent : UnityEvent<string> { }
 
         static public Vector2 uninitializedNodePosition {
             get { return new Vector2(-1000, -1000); }

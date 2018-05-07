@@ -42,6 +42,8 @@ namespace Klak.Wiring.Patcher
             if (typeof(UnityEvent<Vector3   >).IsAssignableFrom(eventType)) return typeof(Vector3);
             if (typeof(UnityEvent<Quaternion>).IsAssignableFrom(eventType)) return typeof(Quaternion);
             if (typeof(UnityEvent<Color     >).IsAssignableFrom(eventType)) return typeof(Color);
+            if (typeof(UnityEvent<bool      >).IsAssignableFrom(eventType)) return typeof(bool);
+            if (typeof(UnityEvent<string    >).IsAssignableFrom(eventType)) return typeof(string);
             return null;
         }
 
@@ -137,7 +139,35 @@ namespace Klak.Wiring.Patcher
                     return true;
                 }
             }
-
+            else if (triggerEvent is UnityEvent<bool>)
+            {
+                // The trigger event has a bool parameter.
+                // Then the target method should have a bool parameter too.
+                if (actionType == typeof(UnityAction<bool>))
+                {
+                    // Add the action to the event.
+                    UnityEventTools.AddPersistentListener(
+                       (UnityEvent<bool>)triggerEvent,
+                       (UnityAction<bool>)targetAction
+                    );
+                    return true;
+                }
+            }
+            else if (triggerEvent is UnityEvent<string>)
+            {
+                // The trigger event has a string parameter.
+                // Then the target method should have a string parameter too.
+                if (actionType == typeof(UnityAction<string>))
+                {
+                    // Add the action to the event.
+                    UnityEventTools.AddPersistentListener(
+                        (UnityEvent<string>)triggerEvent,
+                        (UnityAction<string>)targetAction
+                    );
+                    return true;
+                }
+            }
+            Debug.LogWarning("Not a valid connection, perhaps check if your data type has been setup within graph utilities.");
             return false; // trigger-target mismatch
         }
 
@@ -198,6 +228,8 @@ namespace Klak.Wiring.Patcher
             if (paramType == typeof(Vector3   )) return typeof(UnityAction<Vector3   >);
             if (paramType == typeof(Quaternion)) return typeof(UnityAction<Quaternion>);
             if (paramType == typeof(Color     )) return typeof(UnityAction<Color     >);
+            if (paramType == typeof(bool      )) return typeof(UnityAction<bool      >);
+            if (paramType == typeof(string    )) return typeof(UnityAction<string    >);
 
             // No one matches the method type.
             return null;
