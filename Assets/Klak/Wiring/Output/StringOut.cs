@@ -1,11 +1,7 @@
-﻿//
+//
 // Klak - Utilities for creative coding with Unity
 //
 // Copyright (C) 2016 Keijiro Takahashi
-//
-// Klak Spherical Coordinates - Extended maths functions
-// 
-// Copyright (C) 2018 Thomas Deacon
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -26,63 +22,43 @@
 // THE SOFTWARE.
 //
 using UnityEngine;
-using Klak.Math;
+using System.Reflection;
 
 namespace Klak.Wiring
 {
-    [AddComponentMenu("Klak/Wiring/Conversion/Spherical")]
-    public class Spherical : NodeBase
+    [AddComponentMenu("Klak/Wiring/Output/Generic/String Out")]
+    public class StringOut : NodeBase
     {
-        #region Editable properties        
+        #region Editable properties
+
         [SerializeField]
-        float _scale = 1f;
+        Component _target;
+
+        [SerializeField]
+        string _propertyName;
+
         #endregion
 
         #region Node I/O
 
         [Inlet]
-        public float radius {
+        public string input {
             set {
-                if (!enabled) return;
-                _radius = value;
-                _vectorEvent.Invoke(GetVectorOut());
+                if (!enabled || _target == null || _propertyInfo == null) return;
+                _propertyInfo.SetValue(_target, value, null);
             }
         }
-
-        [Inlet]
-        public float polar {
-            set {
-                if (!enabled) return;
-                _polar = value;
-                _vectorEvent.Invoke(GetVectorOut());
-            }
-        }
-
-        [Inlet]
-        public float elevation {
-            set {
-                if (!enabled) return;
-                _elevation = value;
-                _vectorEvent.Invoke(GetVectorOut());
-            }
-        }
-
-        [SerializeField, Outlet]
-        Vector3Event _vectorEvent = new Vector3Event();
 
         #endregion
 
         #region Private members
 
-        float _radius; 
-        float _polar; 
-        float _elevation;
+        PropertyInfo _propertyInfo;
 
-        Vector3 GetVectorOut()
+        void OnEnable()
         {
-            Vector3 o = Vector3.zero;
-            SphericalCoordinates.SphericalToCartesian(_radius,_polar,_elevation, out o);
-            return o * _scale;
+            if (_target == null || string.IsNullOrEmpty(_propertyName)) return;
+            _propertyInfo = _target.GetType().GetProperty(_propertyName);
         }
 
         #endregion

@@ -43,13 +43,13 @@ namespace Klak.Wiring
         string[] _propertyList;
         Type _cachedType;
 
-        void OnEnable()
+        protected virtual void OnEnable()
         {
             _target = serializedObject.FindProperty("_target");
             _propertyName = serializedObject.FindProperty("_propertyName");
         }
 
-        void OnDisable()
+        protected virtual void OnDisable()
         {
             _target = null;
             _propertyName = null;
@@ -95,6 +95,9 @@ namespace Klak.Wiring
         {
             serializedObject.Update();
 
+            // Messy way to allow inherited classes to do different stuff
+            CustomSettings();
+
             EditorGUILayout.PropertyField(_target);
 
             // If the target is set...
@@ -134,5 +137,7 @@ namespace Klak.Wiring
 
             serializedObject.ApplyModifiedProperties();
         }
+
+        protected virtual void CustomSettings(){}
     }
 }

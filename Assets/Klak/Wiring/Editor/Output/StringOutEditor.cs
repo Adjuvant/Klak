@@ -1,4 +1,4 @@
-﻿//
+//
 // Klak - Utilities for creative coding with Unity
 //
 // Copyright (C) 2016 Keijiro Takahashi
@@ -22,32 +22,12 @@
 // THE SOFTWARE.
 //
 using UnityEngine;
+using UnityEditor;
 
 namespace Klak.Wiring
 {
-    [AddComponentMenu("Klak/Wiring/Conversion/Vector")]
-    public class Vector : NodeBase
+    [CustomEditor(typeof(StringOut))]
+    public class StringOutEditor : GenericOutEditor<string>
     {
-        #region Editable properties
-
-        [SerializeField]
-        Vector3 _baseVector = Vector3.up;
-
-        #endregion
-
-        #region Node I/O
-
-        [Inlet]
-        public float scale {
-            set {
-                if (!enabled) return;
-                _vectorEvent.Invoke(_baseVector * value);
-            }
-        }
-
-        [SerializeField, Outlet]
-        Vector3Event _vectorEvent = new Vector3Event();
-
-        #endregion
     }
 }

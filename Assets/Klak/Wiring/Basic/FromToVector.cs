@@ -1,4 +1,4 @@
-//
+﻿//
 // Klak - Utilities for creative coding with Unity
 //
 // Copyright (C) 2016 Keijiro Takahashi
@@ -26,7 +26,7 @@ using Klak.Math;
 
 namespace Klak.Wiring
 {
-    [AddComponentMenu("Klak/Wiring/Convertion/From To Vector")]
+    [AddComponentMenu("Klak/Wiring/Conversion/From To Vector")]
     public class FromToVector : NodeBase
     {
         #region Editable properties

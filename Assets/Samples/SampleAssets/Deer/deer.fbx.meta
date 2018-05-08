@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: b21eb67b73b3f48fba05937ffa3cfb3a
+timeCreated: 1525206553
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Backbone
+    100004: Backbone.001
+    100006: Backbone.002
+    100008: Backleg_L
+    100010: Backleg_L.001
+    100012: Backleg_L.002
+    100014: Backleg_L.002_end
+    100016: Backleg_R
+    100018: Backleg_R.001
+    100020: Backleg_R.002
+    100022: Backleg_R.002_end
+    100024: Body
+    100026: Camera
+    100028: //RootNode
+    100030: Eyes
+    100032: Frontleg_L
+    100034: Frontleg_L.001
+    100036: Frontleg_L.002
+    100038: Frontleg_L.002_end
+    100040: Frontleg_R
+    100042: Frontleg_R.001
+    100044: Frontleg_R.002
+    100046: Frontleg_R.002_end
+    100048: Head
+    100050: Head 1
+    100052: Head_L.001
+    100054: Head_L.001_end
+    100056: Head_R.001
+    100058: Head_R.001_end
+    100060: Hemi
+    100062: Hip
+    100064: IK-Backbone
+    100066: IK-Backbone_end
+    100068: IK-Backleg_L
+    100070: IK-Backleg_L_end
+    100072: IK-Backleg_R
+    100074: IK-Backleg_R_end
+    100076: IK-BacklegTarget_L
+    100078: IK-BacklegTarget_L_end
+    100080: IK-BacklegTarget_R
+    100082: IK-BacklegTarget_R_end
+    100084: IK-Frontleg_L
+    100086: IK-Frontleg_L_end
+    100088: IK-Frontleg_R
+    100090: IK-Frontleg_R_end
+    100092: IK-FrontlegTarget_L
+    100094: IK-FrontlegTarget_L_end
+    100096: IK-FrontlegTarget_R
+    100098: IK-FrontlegTarget_R_end
+    100100: IK-Head
+    100102: IK-Head_end
+    100104: IK-Hip
+    100106: IK-Hip_end
+    100108: Lamp
+    100110: Main
+    400000: Armature
+    400002: Backbone
+    400004: Backbone.001
+    400006: Backbone.002
+    400008: Backleg_L
+    400010: Backleg_L.001
+    400012: Backleg_L.002
+    400014: Backleg_L.002_end
+    400016: Backleg_R
+    400018: Backleg_R.001
+    400020: Backleg_R.002
+    400022: Backleg_R.002_end
+    400024: Body
+    400026: Camera
+    400028: //RootNode
+    400030: Eyes
+    400032: Frontleg_L
+    400034: Frontleg_L.001
+    400036: Frontleg_L.002
+    400038: Frontleg_L.002_end
+    400040: Frontleg_R
+    400042: Frontleg_R.001
+    400044: Frontleg_R.002
+    400046: Frontleg_R.002_end
+    400048: Head
+    400050: Head 1
+    400052: Head_L.001
+    400054: Head_L.001_end
+    400056: Head_R.001
+    400058: Head_R.001_end
+    400060: Hemi
+    400062: Hip
+    400064: IK-Backbone
+    400066: IK-Backbone_end
+    400068: IK-Backleg_L
+    400070: IK-Backleg_L_end
+    400072: IK-Backleg_R
+    400074: IK-Backleg_R_end
+    400076: IK-BacklegTarget_L
+    400078: IK-BacklegTarget_L_end
+    400080: IK-BacklegTarget_R
+    400082: IK-BacklegTarget_R_end
+    400084: IK-Frontleg_L
+    400086: IK-Frontleg_L_end
+    400088: IK-Frontleg_R
+    400090: IK-Frontleg_R_end
+    400092: IK-FrontlegTarget_L
+    400094: IK-FrontlegTarget_L_end
+    400096: IK-FrontlegTarget_R
+    400098: IK-FrontlegTarget_R_end
+    400100: IK-Head
+    400102: IK-Head_end
+    400104: IK-Hip
+    400106: IK-Hip_end
+    400108: Lamp
+    400110: Main
+    2000000: Camera
+    2100000: head
+    2100002: Eye
+    2100004: body
+    4300000: Head
+    4300002: Eyes
+    4300004: Body
+    7400000: Armature|Die.001
+    7400002: Armature|Idle
+    9500000: //RootNode
+    10800000: Hemi
+    10800002: Lamp
+    13700000: Body
+    13700002: Eyes
+    13700004: Head
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.8
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
