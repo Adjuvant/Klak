@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_1;UNITY_2017_4;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -64,8 +64,10 @@
      <Compile Include="Assets\Jiffy\Editor\lib\Type Search Window\EditorGUIEx.cs" />
      <Compile Include="Assets\Jiffy\Editor\lib\Type Search Window\Styles.cs" />
      <Compile Include="Assets\Jiffy\Editor\lib\Type Search Window\TypeSearchWindow.cs" />
+     <Compile Include="Assets\Klak\Editor\GUIHelper.cs" />
      <Compile Include="Assets\Klak\Editor\ImageSequenceWindow.cs" />
      <Compile Include="Assets\Klak\Math\Editor\InterpolatorConfigDrawer.cs" />
+     <Compile Include="Assets\Klak\Math\Editor\WaveConfigDrawer.cs" />
      <Compile Include="Assets\Klak\Motion\Editor\BrownianMotionEditor.cs" />
      <Compile Include="Assets\Klak\Motion\Editor\ConstantMotionEditor.cs" />
      <Compile Include="Assets\Klak\Motion\Editor\SmoothFollowEditor.cs" />
@@ -73,10 +75,13 @@
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\ColorRampEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\EulerRotationEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\FloatAnimationEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Basic\FloatToIntRangeEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\FromToVectorEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\HSBColorEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\SphericalEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Basic\VectorEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Data\StringDataEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\EnvelopeGeneratorEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\BangFilterEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\DelayEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Filter\FloatFilterEditor.cs" />
@@ -97,8 +102,11 @@
      <Compile Include="Assets\Klak\Wiring\Editor\Input\NoiseEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Input\RandomValueEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Input\StarterEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Input\TransformInputEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Input\WaveEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\ActiveStatusOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\AnimatorOutEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Output\BoolOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\ColorOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\EventOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\FloatOutEditor.cs" />
@@ -109,6 +117,7 @@
      <Compile Include="Assets\Klak\Wiring\Editor\Output\MaterialVectorOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\ParticleSystemOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\RotationOutEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\Output\StringOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\SystemPropertyOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\TransformOutEditor.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Output\VectorOutEditor.cs" />
@@ -123,6 +132,8 @@
      <Compile Include="Assets\Klak\Wiring\Editor\Patcher\PatcherWindow.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\Patcher\Styles.cs" />
      <Compile Include="Assets\Klak\Wiring\Editor\System\PatchEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\TransformMapEditor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Editor\ValueMapEditor.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
